@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThumbnailsViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="lv4-U3-e65"/>
+                <outletCollection property="imageViews" destination="A91-Wu-tfG" id="hif-lR-h2x"/>
+                <outletCollection property="imageViews" destination="PUL-ph-BIB" id="lud-vO-pCI"/>
+                <outletCollection property="imageViews" destination="nZd-z1-5GV" id="7FW-6D-ZZA"/>
+                <outletCollection property="imageViews" destination="6PT-dN-NrY" id="A03-bl-kX6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UIImageView">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="A91-Wu-tfG">
+                    <rect key="frame" x="29" y="48" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PUL-ph-BIB">
+                    <rect key="frame" x="428" y="48" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="center" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nZd-z1-5GV">
+                    <rect key="frame" x="29" y="268" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="center" image="4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6PT-dN-NrY">
+                    <rect key="frame" x="428" y="268" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6PT-dN-NrY" firstAttribute="leading" secondItem="nZd-z1-5GV" secondAttribute="trailing" constant="79" id="Af1-Ng-3Bi"/>
+                <constraint firstItem="PUL-ph-BIB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="48" id="JmL-gn-CPy"/>
+                <constraint firstItem="nZd-z1-5GV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="29" id="RI6-Hk-PFt"/>
+                <constraint firstItem="PUL-ph-BIB" firstAttribute="leading" secondItem="A91-Wu-tfG" secondAttribute="trailing" constant="79" id="Vrz-sd-w7P"/>
+                <constraint firstItem="PUL-ph-BIB" firstAttribute="leading" secondItem="A91-Wu-tfG" secondAttribute="trailing" constant="79" id="i5C-00-Cic"/>
+                <constraint firstAttribute="trailing" secondItem="PUL-ph-BIB" secondAttribute="trailing" constant="20" id="o7S-0M-PyB"/>
+                <constraint firstItem="6PT-dN-NrY" firstAttribute="top" secondItem="PUL-ph-BIB" secondAttribute="bottom" constant="40" id="v29-GU-ibo"/>
+                <constraint firstItem="nZd-z1-5GV" firstAttribute="top" secondItem="A91-Wu-tfG" secondAttribute="bottom" constant="40" id="xFI-c4-bU6"/>
+                <constraint firstItem="A91-Wu-tfG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="48" id="xfB-GO-OxD"/>
+                <constraint firstItem="6PT-dN-NrY" firstAttribute="leading" secondItem="nZd-z1-5GV" secondAttribute="trailing" constant="79" id="y9O-x3-4fW"/>
+                <constraint firstItem="A91-Wu-tfG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="29" id="yrB-Dc-tcq"/>
+                <constraint firstAttribute="trailing" secondItem="6PT-dN-NrY" secondAttribute="trailing" constant="20" id="zNy-d5-TYB"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1.jpg" width="320" height="180"/>
+        <image name="2.jpg" width="320" height="180"/>
+        <image name="3.jpg" width="320" height="180"/>
+        <image name="4.jpg" width="320" height="180"/>
+    </resources>
+</document>
